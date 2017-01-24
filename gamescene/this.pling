@@ -1,8 +1,8 @@
-title = "Mix  and Fix"
+title = "Into The Dawn"
 description = "This is a longer description about my program."
 copyright = "Copyright (c) Test Program"
 version = "1.0.x"
-vendorId = "com.mixandfix"
+vendorId = "com.intothedawn"
 resources =[
 	"sprites"
 ]

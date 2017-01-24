@@ -1,0 +1,8 @@
+{
+	"depends" : [
+		"cape",
+		"capex",
+		"motion",
+		"cave"
+	]
+}

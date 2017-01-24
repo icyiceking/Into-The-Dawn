@@ -5,7 +5,7 @@ var width as double
 
 func createSprite override as Sprite
 {
-	var txt = scene.createTextureForImageResource("backgroundone")
+	var txt = scene.createTextureForImageResource("city2")
 	width = layer.getReferenceWidth()
 	var bg = SpriteUtil.addTextureSpriteForSize(scene, layer, txt, width, layer.getReferenceHeight())
 	spriteScene = SpriteUtil.addTextureSpriteForSize(scene, layer, txt, width, layer.getReferenceHeight())

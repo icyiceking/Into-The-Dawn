@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Jasper\AppData\Local\Android\sdk\platforms\android-25\android.jar"
+        revision="25.0.2"
+        sha1="712a0312fe844a21a1b3812fa960c363a1578984">
+        <dex dex="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\android-f86be85173382d5b0d371fe6f89d630951f4c9a6.jar" />
+    </item>
+    <item
+        jar="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\exploded-aar\org.jkop.cape\jars\classes.jar"
+        revision="25.0.2"
+        sha1="952938e5257ad4e41e1ef85c0c1a3590dc0f44e7">
+        <dex dex="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-e73bbfda50fd08a2af2a3e1ef5b2ea16afffb0db.jar" />
+    </item>
+    <item
+        jar="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\exploded-aar\org.jkop.cave\jars\classes.jar"
+        revision="25.0.2"
+        sha1="c0e9f4272e88a7600286584bbe1536ea74e1ba81">
+        <dex dex="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-1c35498878b2d6fe98f6ad84a430e9dc36d60a04.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jasper\AppData\Local\Android\sdk\platforms\android-25\optional\org.apache.http.legacy.jar"
+        revision="25.0.2"
+        sha1="5f0541a4298daa0590b22cfbde43f85e2a675545">
+        <dex dex="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\transforms\preJackRuntimeLibraries\debug\jars\8000\40\org.apache.http.legacy-efd0841581b8541a6695b02f9697ae948d09f6ec.jar" />
+    </item>
+    <item
+        jar="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\exploded-aar\org.jkop.capex\jars\classes.jar"
+        revision="25.0.2"
+        sha1="549770641a64f791d823e837ffdfa229229bbc48">
+        <dex dex="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-0dbaa38660064c9aaeeed186015918c2b7e63735.jar" />
+    </item>
+    <item
+        jar="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\exploded-aar\org.jkop.motion\jars\classes.jar"
+        revision="25.0.2"
+        sha1="c3fbf7ffec8f368e2ee92f3c02f765e9b76c0a3f">
+        <dex dex="D:\Projects\EQELA PROJECT OJT\Into The Dawn\gamescene\build\android\src\build\intermediates\transforms\preJackPackagedLibraries\debug\jars\8000\1f\classes-008465969ae8f8905f1439d1de3b6ff24e886bfd.jar" />
+    </item>
+
+</items>

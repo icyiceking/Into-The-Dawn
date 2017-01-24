@@ -1,4 +1,4 @@
-class is SpriteEntity is PointerListener imports cape imports cave imports motion:
+class is SpriteEntity is PointerListener imports cape imports cave imports motion imports capex:
 
 var playButton as TextureSprite
 var width as double

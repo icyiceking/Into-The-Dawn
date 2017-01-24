@@ -13,8 +13,8 @@ func initialize override
 	width = getReferenceWidth()
 	background = addTextureSpriteForSize(createTextureForImageResource("backgroundmain"), width , height)
 	background.move(0,0)
-	addEntity(play = new PlayButtonEntity())
 	addEntity(credit = new CreditButtonEntity())
+	addEntity(play = new PlayButtonEntity())
 }
 
 func cleanup override
