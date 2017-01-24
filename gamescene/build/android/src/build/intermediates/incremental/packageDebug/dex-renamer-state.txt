@@ -1,4 +1,4 @@
-#Tue Jan 24 18:08:25 SGT 2017
+#Tue Jan 24 18:25:15 SGT 2017
 base.0=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main\\classes.dex

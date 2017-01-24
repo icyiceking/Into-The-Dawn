@@ -29,7 +29,7 @@ android.applicationVariants.all { variant ->
 	variant.generateBuildConfig.sourceOutputDir = new File('buildConfig')
 	variant.outputs.each { output ->
 		def file = output.outputFile
-		output.outputFile = new File(file.parent, "com.mixandfix.gamescene" + fext)
+		output.outputFile = new File(file.parent, "com.intothedawn.gamescene" + fext)
 	}
 }
 
@@ -48,7 +48,7 @@ android {
 		}
 		
 		
-		applicationId "com.mixandfix.gamescene"
+		applicationId "com.intothedawn.gamescene"
 		
 	}
 

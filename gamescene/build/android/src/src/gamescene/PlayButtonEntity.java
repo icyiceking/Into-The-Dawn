@@ -30,6 +30,9 @@ public class PlayButtonEntity extends motion.SpriteEntity implements cave.Pointe
 				menuScene.pushScene((motion.Scene)new gamescene.GameScene());
 			}
 		}
+		if(event.isConsumed) {
+			return(false);
+		}
 		return(false);
 	}
 }

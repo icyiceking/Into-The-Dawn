@@ -3,8 +3,8 @@ class is SpriteSceneWithEntities imports cape imports cave imports motion #mainS
 var background as TextureSprite
 var height as double
 var width as double
-var play as PlayButtonEntity
-var credit as CreditButtonEntity
+var play as SpriteEntity
+var credit as SpriteEntity
 
 func initialize override
 {
@@ -15,6 +15,16 @@ func initialize override
 	background.move(0,0)
 	addEntity(credit = new CreditButtonEntity())
 	addEntity(play = new PlayButtonEntity())
+}
+
+func getPlayButton as Sprite
+{
+	return play
+}
+
+func getCreditButton as Sprite
+{
+	return credit
 }
 
 func cleanup override

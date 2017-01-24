@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mixandfix.gamescene"
+    package="com.intothedawn.gamescene"
     android:versionCode="10001515"
     android:versionName="1.0.20170124" >
 
@@ -21,7 +21,7 @@
 
     <application
         android:hardwareAccelerated="true"
-        android:label="Mix  and Fix" >
+        android:label="Into The Dawn" >
         <activity
             android:name="gamescene.MainMenuSceneActivity"
             android:configChanges="orientation|screenSize" >

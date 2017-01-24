@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 24 18:08:25 SGT 2017
+#Tue Jan 24 18:25:15 SGT 2017
 19.set=ANDROID_RESOURCE
 8.set=ANDROID_RESOURCE
 1.base=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_
@@ -15,7 +15,7 @@
 11.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\ripple.jpg
 11.base=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_
 9.base=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_
-9.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\backgroundone.jpg
+9.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\instruction.png
 13.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 13.base=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_
 11.set=ANDROID_RESOURCE
@@ -45,7 +45,7 @@
 10.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\mainmenu.png
 13.set=ANDROID_RESOURCE
 8.base=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_
-8.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\instruction.png
+8.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-nodpi-v4\\backgroundone.jpg
 2.set=ANDROID_RESOURCE
 12.file=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main\\classes.dex
 12.base=D\:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\transforms\\jack\\debug\\folders\\1000\\1f\\main

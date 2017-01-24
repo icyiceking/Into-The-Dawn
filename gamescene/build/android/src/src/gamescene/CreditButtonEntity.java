@@ -30,6 +30,9 @@ public class CreditButtonEntity extends motion.SpriteEntity implements cave.Poin
 				menuScene.pushScene((motion.Scene)new gamescene.CreditScene());
 			}
 		}
+		if(event.isConsumed) {
+			return(false);
+		}
 		return(false);
 	}
 }

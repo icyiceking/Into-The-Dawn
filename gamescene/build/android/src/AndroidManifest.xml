@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mixandfix.gamescene" android:versionCode="10001515" android:versionName="1.0.20170124">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.intothedawn.gamescene" android:versionCode="10001515" android:versionName="1.0.20170124">
   <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
   <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
-  <application android:label="Mix  and Fix" android:hardwareAccelerated="true">
+  <application android:label="Into The Dawn" android:hardwareAccelerated="true">
     <activity android:name="gamescene.MainMenuSceneActivity" android:configChanges="orientation|screenSize">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

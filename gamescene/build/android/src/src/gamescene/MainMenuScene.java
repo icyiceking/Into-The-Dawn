@@ -5,8 +5,8 @@ public class MainMenuScene extends motion.SpriteSceneWithEntities
 	private motion.TextureSprite background = null;
 	private double height = 0.00;
 	private double width = 0.00;
-	private gamescene.PlayButtonEntity play = null;
-	private gamescene.CreditButtonEntity credit = null;
+	private motion.SpriteEntity play = null;
+	private motion.SpriteEntity credit = null;
 
 	@Override
 	public void initialize() {
@@ -15,8 +15,16 @@ public class MainMenuScene extends motion.SpriteSceneWithEntities
 		width = getReferenceWidth();
 		background = addTextureSpriteForSize(createTextureForImageResource("backgroundmain"), width, height);
 		background.move((double)0, (double)0);
-		addEntity((motion.Entity)(credit = new gamescene.CreditButtonEntity()));
-		addEntity((motion.Entity)(play = new gamescene.PlayButtonEntity()));
+		addEntity((motion.Entity)(credit = (motion.SpriteEntity)new gamescene.CreditButtonEntity()));
+		addEntity((motion.Entity)(play = (motion.SpriteEntity)new gamescene.PlayButtonEntity()));
+	}
+
+	public motion.Sprite getPlayButton() {
+		return((motion.Sprite)play);
+	}
+
+	public motion.Sprite getCreditButton() {
+		return((motion.Sprite)credit);
 	}
 
 	@Override

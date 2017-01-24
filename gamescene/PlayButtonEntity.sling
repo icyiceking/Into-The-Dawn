@@ -22,5 +22,8 @@ func onPointerEvent(event as PointerEvent) as bool
 			menuScene.pushScene(new GameScene())
 		}
 	}
+	if(event.isConsumed){
+		return false
+	}
 	return false
 }
