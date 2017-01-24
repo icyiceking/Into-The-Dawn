@@ -9,6 +9,8 @@ var width as double
 var time as double
 var rand = new Random()
 var score as int
+var audioManager as AudioManager
+var stream as AudioStream
 
 func initialize override
 {
@@ -16,6 +18,11 @@ func initialize override
 	height  = getReferenceHeight()
 	width = getReferenceWidth()
 	addEntity(background = new BackgroundEntity())
+	audioManager = AudioManager.forApplication(getContext())
+	if(audioManager != null){
+		stream = audioManager.getStreamForResource("music")
+	}
+	onTimeToPlayStream()
 	addEntity(square = new SquareEntity())
 	addEntity(quit = new QuitButtonEntity())
 }
@@ -26,13 +33,41 @@ func getSquare as SpriteEntity
 }
 func tick(gameTime as TimeValue, delta as double) override
 {
+	var spawner = rand.nextInt(1,2)
 	base.tick(gameTime, delta)
 	time++
 	if(time % 40 == 0){
 		score++
 	}
-	if(time % rand.nextInt(85,90) == 0){
-		addEntity(triangle = new TriangleEntity())
+	if(time % 100 == 0){
+		if(spawner == 1){
+			addEntity(triangle = new TriangleEntity())
+		}
+	}
+	if(time % 105 == 0){
+		if(spawner == 2){
+			addEntity(triangle = new TriangleEntity())
+		}
+	}
+}
+
+func getContext as ApplicationContext
+{
+	return context
+}
+
+func onTimeToPlayStream
+{
+	if(stream != null){
+		stream.play()
+		stream.setLooping(true)
+	}
+}
+
+func stopStream
+{
+	if(stream != null){
+		stream.stop()
 	}
 }
 
@@ -45,6 +80,7 @@ func removeTriangleSprite
 
 func cleanup override
 {
+	stopStream()
 	removeEntity(background)
 	removeEntity(square)
 	removeEntity(triangle)

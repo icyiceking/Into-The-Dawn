@@ -4,7 +4,8 @@ copyright = "Copyright (c) Test Program"
 version = "1.0.x"
 vendorId = "com.intothedawn"
 resources =[
-	"sprites"
+	"sprites",
+	"music"
 ]
 depends = [
 	"cape",
