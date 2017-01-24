@@ -1,0 +1,25 @@
+class is SpriteSceneWithEntities imports cape imports cave imports motion #mainScene:
+
+var background as TextureSprite
+var height as double
+var width as double
+var play as PlayButtonEntity
+var credit as CreditButtonEntity
+
+func initialize override
+{
+	base.initialize()
+	height  = getReferenceHeight()
+	width = getReferenceWidth()
+	background = addTextureSpriteForSize(createTextureForImageResource("backgroundmain"), width , height)
+	background.move(0,0)
+	addEntity(play = new PlayButtonEntity())
+	addEntity(credit = new CreditButtonEntity())
+}
+
+func cleanup override
+{
+	removeSprite(background)
+	removeEntity(play)
+	removeEntity(credit)
+}

@@ -1,0 +1,26 @@
+class is SpriteEntity is PointerListener imports cape imports cave imports motion:
+
+var mainMenuButton as TextureSprite
+var width as double
+var height as double
+var gameOverScene as GameOverScene
+
+func createSprite override as Sprite
+{
+	gameOverScene = getScene() as GameOverScene
+	height = gameOverScene.getReferenceHeight()
+	width = gameOverScene.getReferenceWidth()
+	mainMenuButton = gameOverScene.addTextureSpriteForSize(gameOverScene.createTextureForImageResource("mainmenu"), width * 0.3, height * 0.07)
+	mainMenuButton.move(width - mainMenuButton.getWidth(), mainMenuButton.getHeight())
+	return mainMenuButton
+}
+
+func onPointerEvent(event as PointerEvent) as bool
+{
+	if(event.action == PointerEvent.DOWN){
+		if(event.isInside(mainMenuButton.getX(), mainMenuButton.getY(), mainMenuButton.getWidth(), mainMenuButton.getHeight())){
+			gameOverScene.pushScene(new MainMenuScene())
+		}
+	}
+	return false
+}

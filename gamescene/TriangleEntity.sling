@@ -1,0 +1,43 @@
+class is SpriteEntity imports cape imports cave imports motion:
+
+var triangle as TextureSprite
+var height as double
+var width as double
+var gameScene as GameScene
+var px as double
+
+func createSprite override as Sprite
+{
+	gameScene = getScene() as GameScene
+	height = gameScene.getReferenceHeight()
+	width = gameScene.getReferenceWidth()
+	PRINT(width)
+	triangle = gameScene.addTextureSpriteForSize(gameScene.createTextureForImageResource("redtri"),  width * 0.05, width * 0.05 )
+	triangle.move(width - triangle.getWidth(), (height - triangle.getHeight()))
+	return triangle
+}
+
+func isCollide(a as Sprite, b as Sprite) as bool
+{
+	var r1 = a.getWidth() * 0.6
+	var r2 = a.getHeight()* 0.1
+	var totalR = r1 + r2
+	var dx = a.getX() - b.getX()
+	var dy = a.getY() - b.getY()
+	var dr = Math.sqrt(dx * dx + dy * dy)
+	if(dr < totalR){
+		return true
+	}
+	return false
+}
+
+func tick(gameTime as TimeValue, delta as double) override
+{
+	base.tick(gameTime, delta)
+	px = triangle.getX()
+	px -= delta / 2
+	if(isCollide(gameScene.getSquare(), triangle)){
+		gameScene.pushScene(new GameOverScene())
+	}
+	triangle.move(px,triangle.getY())
+}

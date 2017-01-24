@@ -1,0 +1,26 @@
+class is SpriteEntity is PointerListener imports cape imports cave imports motion:
+
+var quitButton as TextureSprite
+var width as double
+var height as double
+var gameScene as GameScene
+
+func createSprite override as Sprite
+{
+	gameScene = getScene() as GameScene
+	height = gameScene.getReferenceHeight()
+	width = gameScene.getReferenceWidth()
+	quitButton = gameScene.addTextureSpriteForSize(gameScene.createTextureForImageResource("quit"), width * 0.3, height * 0.07)
+	quitButton.move(width - quitButton.getWidth(), quitButton.getHeight())
+	return quitButton
+}
+
+func onPointerEvent(event as PointerEvent) as bool
+{
+	if(event.action == PointerEvent.DOWN){
+		if(event.isInside(quitButton.getX(), quitButton.getY(), quitButton.getWidth(), quitButton.getHeight())){
+			gameScene.pushScene(new MainMenuScene())
+		}
+	}
+	return false
+}

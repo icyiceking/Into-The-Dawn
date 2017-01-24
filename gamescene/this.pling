@@ -1,0 +1,17 @@
+title = "Mix  and Fix"
+description = "This is a longer description about my program."
+copyright = "Copyright (c) Test Program"
+version = "1.0.x"
+vendorId = "com.mixandfix"
+resources =[
+	"sprites"
+]
+depends = [
+	"cape",
+	"capex",
+	"motion"
+]
+preFilters += "@motion"
+compilerOptions = {
+	"html5.readableCode" : "true"
+}

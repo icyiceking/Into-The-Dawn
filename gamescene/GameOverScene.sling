@@ -1,0 +1,21 @@
+class is SpriteSceneWithEntities imports cape imports cave imports motion imports capex:
+
+var background as SpriteEntity
+var mainMenuButton as BackButtonEntity
+var height as double
+var width as double
+
+func initialize override
+{
+	base.initialize()
+	height  = getReferenceHeight()
+	width = getReferenceWidth()
+	addEntity(background = new BackgroundEntity())
+	addEntity(mainMenuButton = new BackButtonEntity())
+}
+
+func cleanup override
+{
+	removeEntity(mainMenuButton)
+	removeEntity(background)
+}

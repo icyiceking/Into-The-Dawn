@@ -1,0 +1,52 @@
+class is SpriteSceneWithEntities imports cape imports cave imports motion imports capex:
+
+var background as SpriteEntity
+var square as SpriteEntity
+var triangle as SpriteEntity
+var quit as SpriteEntity
+var height as double
+var width as double
+var time as double
+var rand = new Random()
+var score as int
+
+func initialize override
+{
+	base.initialize()
+	height  = getReferenceHeight()
+	width = getReferenceWidth()
+	addEntity(background = new BackgroundEntity())
+	addEntity(square = new SquareEntity())
+	addEntity(quit = new QuitButtonEntity())
+}
+
+func getSquare as SpriteEntity
+{
+	return square
+}
+func tick(gameTime as TimeValue, delta as double) override
+{
+	base.tick(gameTime, delta)
+	time++
+	if(time % 40 == 0){
+		score++
+	}
+	if(time % rand.nextInt(85,90) == 0){
+		addEntity(triangle = new TriangleEntity())
+	}
+}
+
+func removeTriangleSprite
+{
+	if(triangle.getX() <= -width){
+		removeSprite(triangle)
+	}
+}
+
+func cleanup override
+{
+	removeEntity(background)
+	removeEntity(square)
+	removeEntity(triangle)
+	removeEntity(quit)
+}

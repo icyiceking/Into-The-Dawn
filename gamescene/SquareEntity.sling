@@ -1,0 +1,49 @@
+class is SpriteEntity is PointerListener imports cape imports cave imports motion:
+
+var square as TextureSprite
+var width as double
+var height as double
+var gameScene as GameScene
+var isPressedUp = true
+var speedY as double
+//var speedX as double
+var px as double
+
+func createSprite override as Sprite
+{
+	gameScene = getScene() as GameScene
+	height = gameScene.getReferenceHeight()
+	width = gameScene.getReferenceWidth()
+	square = gameScene.addTextureSpriteForSize(gameScene.createTextureForImageResource("square"),  width * 0.1, width * 0.1 )
+	square.move((0 + square.getWidth()), (height - square.getHeight()))
+	return square
+}
+
+func onPointerEvent(event as PointerEvent) as bool
+{
+	if(event.action == PointerEvent.DOWN){
+		isPressedUp = true
+	}
+	return false
+}
+
+func jump
+{
+	speedY -= 0.01 * 0.1
+	move(getX(), getY()-speedY)
+	if(speedY <= -0.022){
+		isPressedUp = false
+		speedY = 0.022
+		square.move(getX(), height - square.getHeight())
+	}
+}
+
+func tick(gameTime as TimeValue, delta as double) override
+{
+	base.tick(gameTime, delta)
+	px = square.getX()
+	px -= delta / 5
+	if(isPressedUp){
+		jump()
+	}
+}
