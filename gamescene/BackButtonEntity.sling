@@ -11,7 +11,7 @@ func createSprite override as Sprite
 	height = gameOverScene.getReferenceHeight()
 	width = gameOverScene.getReferenceWidth()
 	mainMenuButton = gameOverScene.addTextureSpriteForSize(gameOverScene.createTextureForImageResource("mainmenu"), width * 0.3, height * 0.07)
-	mainMenuButton.move(width - mainMenuButton.getWidth(), mainMenuButton.getHeight())
+	mainMenuButton.move(width - mainMenuButton.getWidth(), 0)
 	return mainMenuButton
 }
 

@@ -7,6 +7,7 @@ public class TriangleEntity extends motion.SpriteEntity
 	private double width = 0.00;
 	private gamescene.GameScene gameScene = null;
 	private double px = 0.00;
+	private int score = 0;
 
 	static public gamescene.GameScene objectAsGamesceneGameScene(java.lang.Object o) {
 		if(o instanceof gamescene.GameScene) {
@@ -44,8 +45,12 @@ public class TriangleEntity extends motion.SpriteEntity
 		super.tick(gameTime, delta);
 		px = triangle.getX();
 		px -= delta / 2;
+		score = gameScene.getScore();
+		System.out.println("++++");
+		System.out.println(score);
+		System.out.println("++++");
 		if(isCollide((motion.Sprite)gameScene.getSquare(), (motion.Sprite)triangle)) {
-			gameScene.pushScene((motion.Scene)new gamescene.GameOverScene());
+			gameScene.pushScene((motion.Scene)new gamescene.GameOverScene(score));
 		}
 		triangle.move(px, triangle.getY());
 	}

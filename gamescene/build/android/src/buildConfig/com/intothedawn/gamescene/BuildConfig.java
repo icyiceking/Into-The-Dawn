@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.intothedawn.gamescene";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 10001515;
-  public static final String VERSION_NAME = "1.0.20170124";
+  public static final int VERSION_CODE = 10001516;
+  public static final String VERSION_NAME = "1.0.20170125";
 }

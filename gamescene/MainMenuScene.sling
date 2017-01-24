@@ -4,7 +4,6 @@ var background as TextureSprite
 var height as double
 var width as double
 var play as SpriteEntity
-var credit as SpriteEntity
 
 func initialize override
 {
@@ -13,23 +12,12 @@ func initialize override
 	width = getReferenceWidth()
 	background = addTextureSpriteForSize(createTextureForImageResource("backgroundmain"), width , height)
 	background.move(0,0)
-	addEntity(credit = new CreditButtonEntity())
 	addEntity(play = new PlayButtonEntity())
-}
-
-func getPlayButton as Sprite
-{
-	return play
-}
-
-func getCreditButton as Sprite
-{
-	return credit
 }
 
 func cleanup override
 {
 	removeSprite(background)
 	removeEntity(play)
-	removeEntity(credit)
+
 }

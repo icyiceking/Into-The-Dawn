@@ -5,6 +5,7 @@ var height as double
 var width as double
 var gameScene as GameScene
 var px as double
+var score as int
 
 func createSprite override as Sprite
 {
@@ -36,8 +37,12 @@ func tick(gameTime as TimeValue, delta as double) override
 	base.tick(gameTime, delta)
 	px = triangle.getX()
 	px -= delta / 2
+	score = gameScene.getScore()
+	PRINT("++++")
+	PRINT(score)
+	PRINT("++++")
 	if(isCollide(gameScene.getSquare(), triangle)){
-		gameScene.pushScene(new GameOverScene())
+		gameScene.pushScene(new GameOverScene(score))
 	}
 	triangle.move(px,triangle.getY())
 }

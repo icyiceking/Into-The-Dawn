@@ -20,7 +20,7 @@ public class QuitButtonEntity extends motion.SpriteEntity implements cave.Pointe
 		height = gameScene.getReferenceHeight();
 		width = gameScene.getReferenceWidth();
 		quitButton = gameScene.addTextureSpriteForSize(gameScene.createTextureForImageResource("quit"), width * 0.30, height * 0.07);
-		quitButton.move(width - quitButton.getWidth(), quitButton.getHeight());
+		quitButton.move(width - quitButton.getWidth(), (double)0);
 		return((motion.Sprite)quitButton);
 	}
 

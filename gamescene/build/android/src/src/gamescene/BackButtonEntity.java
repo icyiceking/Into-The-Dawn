@@ -20,7 +20,7 @@ public class BackButtonEntity extends motion.SpriteEntity implements cave.Pointe
 		height = gameOverScene.getReferenceHeight();
 		width = gameOverScene.getReferenceWidth();
 		mainMenuButton = gameOverScene.addTextureSpriteForSize(gameOverScene.createTextureForImageResource("mainmenu"), width * 0.30, height * 0.07);
-		mainMenuButton.move(width - mainMenuButton.getWidth(), mainMenuButton.getHeight());
+		mainMenuButton.move(width - mainMenuButton.getWidth(), (double)0);
 		return((motion.Sprite)mainMenuButton);
 	}
 

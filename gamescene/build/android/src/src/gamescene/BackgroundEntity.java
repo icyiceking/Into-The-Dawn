@@ -7,7 +7,7 @@ public class BackgroundEntity extends motion.SpriteEntity
 
 	@Override
 	public motion.Sprite createSprite() {
-		motion.Texture txt = ((motion.Scene)scene).createTextureForImageResource("city2");
+		motion.Texture txt = ((motion.Scene)scene).createTextureForImageResource("myback");
 		width = layer.getReferenceWidth();
 		motion.TextureSprite bg = motion.SpriteUtil.addTextureSpriteForSize((motion.Scene)scene, layer, txt, width, layer.getReferenceHeight());
 		spriteScene = (motion.Sprite)motion.SpriteUtil.addTextureSpriteForSize((motion.Scene)scene, layer, txt, width, layer.getReferenceHeight());

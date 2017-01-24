@@ -4,10 +4,6 @@
         "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\gameover.png"
     },
     {
-        "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\exit.png",
-        "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\exit.png"
-    },
-    {
         "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\square.png",
         "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\square.png"
     },
@@ -16,16 +12,16 @@
         "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\redtri.png"
     },
     {
+        "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\myback.png",
+        "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\myback.png"
+    },
+    {
         "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\credits.png",
         "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\credits.png"
     },
     {
         "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\mainmenu.png",
         "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\mainmenu.png"
-    },
-    {
-        "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\robot.png",
-        "source": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\res\\drawable-nodpi\\robot.png"
     },
     {
         "merged": "D:\\Projects\\EQELA PROJECT OJT\\Into The Dawn\\gamescene\\build\\android\\src\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\start.png",
