@@ -94,6 +94,7 @@ func removeTriangleSprite
 
 func cleanup override
 {
+	removeTriangleSprite()
 	stopStream()
 	removeEntity(background)
 	removeEntity(square)

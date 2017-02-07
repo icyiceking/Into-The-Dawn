@@ -38,9 +38,6 @@ func tick(gameTime as TimeValue, delta as double) override
 	px = triangle.getX()
 	px -= delta / 2
 	score = gameScene.getScore()
-	PRINT("++++")
-	PRINT(score)
-	PRINT("++++")
 	if(isCollide(gameScene.getSquare(), triangle)){
 		gameScene.pushScene(new GameOverScene(score))
 	}

@@ -30,10 +30,12 @@ func onPointerEvent(event as PointerEvent) as bool
 func jump
 {
 	speedY -= 0.01 * 0.1
+	setRotation(getRotation() + 0.1)
 	move(getX(), getY()-speedY)
 	if(speedY <= -0.022){
 		isPressedUp = false
 		speedY = 0.022
+		setRotation(0)
 		square.move(getX(), height - square.getHeight())
 	}
 }
